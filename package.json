@@ -1,6 +1,6 @@
 {
   "name": "postcss-math",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "PostCSS plugin to do some math",
   "keywords": [
     "postcss",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/naaspati/postcss-math",
   "dependencies": {
-    "postcss": "^6.0.1"
+    "postcss": "^6.0.1",
+    "postcss-message-helpers": "^2.0.0"
   }
 }
