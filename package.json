@@ -1,0 +1,22 @@
+{
+  "name": "postcss-math",
+  "version": "0.0.0",
+  "description": "PostCSS plugin to do some math",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "math",
+    "calc"
+  ],
+  "author": "Naaspati <sameerveda@gmail.com>",
+  "license": "MIT",
+  "repository": "naaspati/postcss-math",
+  "bugs": {
+    "url": "https://github.com/naaspati/postcss-math/issues"
+  },
+  "homepage": "https://github.com/naaspati/postcss-math",
+  "dependencies": {
+    "postcss": "^6.0.1"
+  }
+}
