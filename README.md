@@ -1,4 +1,4 @@
-# PostCSS JSMath 
+![icon][logo]# PostCSS JSMath 
 
 [PostCSS] plugin to do some math using Javascript Math
 
@@ -8,7 +8,7 @@ it supports all Math's constants and function.
 Also gives the ability to defined custom constants and functions.  
 
 [PostCSS]: https://github.com/postcss/postcss
-
+[logo]: https://raw.githubusercontent.com/naaspati/postcss-jsmath/master/g21.png
 
 ## Installation
 
