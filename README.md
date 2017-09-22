@@ -1,4 +1,5 @@
-![icon][logo]# PostCSS JSMath 
+![icon][logo]
+# PostCSS JSMath 
 
 [PostCSS] plugin to do some math using Javascript Math
 
