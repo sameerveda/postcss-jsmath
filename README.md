@@ -126,3 +126,8 @@ math(r)  =>  8.3144598
 math(floor(random()*100))  =>  62
 ```
 
+
+
+
+Icons made by [Trinh Ho](https://www.flaticon.com/authors/trinh-ho) from [www.flaticon.com](https://www.flaticon.com/) is licensed by [CC 3.0](http://creativecommons.org/licenses/by/3.0/)
+
