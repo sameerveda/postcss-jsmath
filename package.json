@@ -1,6 +1,6 @@
 {
   "name": "postcss-jsmath",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "PostCSS plugin to do some math",
   "keywords": [
     "postcss",

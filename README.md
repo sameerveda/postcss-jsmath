@@ -4,6 +4,9 @@
 
 It uses javascript's Math object and eval() to perform Math operations. 
 
+it supports all Math's constants and function.
+Also gives the ability to defined custom constants and functions.  
+
 [PostCSS]: https://github.com/postcss/postcss
 
 
@@ -55,20 +58,29 @@ test.css:
 }
 ```
 
-gulpfile.js
+custom constants and functions.
+
+
+gulpfile.js: 
 ```js
 'use strict';
 
 const gulp = require("gulp"),
     postcss = require("gulp-postcss"),
     rename = require("gulp-rename"),
-    math = require("postcss-jsmath");
+    math = require("./postcss-jsmath");
 
 gulp.task("default", function () {
     gulp.src("_TEST_/test.pcss")
         .pipe(postcss([math({
-			e3:12345
-		})]))
+            r: 8.3144598,
+            sum(...numbers) {
+                return numbers.reduce((x, y) => x + y);
+            },
+            firstNumber(...numbers) {
+                return numbers[0];
+            }
+        })]))
         .pipe(rename(p => {
             p.extname = ".css";
         }))
@@ -78,12 +90,22 @@ gulp.task("default", function () {
 
 test.pcss
 ```scss
-.wo-math(e3) {}
+.cls {
+    order: math(sum(1, 2, 3, 5, 6));
+    z-index: math(firstnumber(111, 2, 4, 5));
+    order: math(r);
+    order: math(floor(random()*100));
+}
 ```
 
 test.css
 ```css
-.wo-12345 {}
+.cls {
+    order: 17;
+    z-index: 111;
+    order: 8.3144598;
+    order: 38;
+}
 ```
 
 ### Examples
@@ -97,5 +119,9 @@ math(sqrt(e+1+sqrt(25)+abs(-10)))  =>  4.326462969731631
 math(floor(sqrt(e+1+sqrt(25)+abs(-10))))  =>  4
 linear-gradient(90deg, black math(100/3)%, red math(100/3)%, blue math(100/3)%)  =>  linear-gradient(90deg, black 33.333333333333336%, red 33.333333333333336%, blue 33.333333333333336%)
 math()  =>
+math(sum(1, 2, 3, 5, 6))  =>  17
+math(firstnumber(111, 2, 4, 5))  =>  111
+math(r)  =>  8.3144598
+math(floor(random()*100))  =>  62
 ```
 

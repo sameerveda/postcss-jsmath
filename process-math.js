@@ -77,7 +77,7 @@ function evalable(string) {
 
     return true;
 }
-const nonMathCharsRegex = /^[()\/%*+-]$/g;
+const nonMathCharsRegex = /^[()\/%*+-,]$/g;
 
 function replaceContants(string) {
     if (string.trim().length === 0 || numberTest.test(string))
@@ -109,7 +109,7 @@ function replaceContants(string) {
     }).join("");
 }
 
-const numberTest = /^(?:\d+|\d*\.\d+|\d+\.\d*|\d+e\d+)$/;
+const numberTest = /^[+-]?(?:\d+|\d*\.\d+|\d+\.\d*|\d+e\d+)$/;
 
 function findConstant(s) {
     s = s.trim();
