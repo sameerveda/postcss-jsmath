@@ -1,6 +1,6 @@
 # PostCSS JS-Math 
 
-[PostCSS] plugin to do some math using Javascript <span color=red>Math</span>.
+[PostCSS] plugin to do some math using Javascript <span color='#fff'>Math</span>.
 
 [PostCSS]: https://github.com/postcss/postcss
 
