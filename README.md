@@ -1,6 +1,8 @@
 # PostCSS JS-Math 
 
-[PostCSS] plugin to do some math using Javascript```js Math```
+[PostCSS] plugin to do some math using Javascript Math
+
+It uses javascript's Math object and eval() to perform Math operations. 
 
 [PostCSS]: https://github.com/postcss/postcss
 
@@ -85,7 +87,15 @@ test.css
 ```
 
 ### Examples
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=sameer) `#f03c15`
-- ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `#c5f015`
-- ![#1589F0](https://placehold.it/15/1589F0/000000?text=+) `#1589F0`
+```js
+.val-math(1+1), .val-math(2+2)  =>  .val-2, .val-4
+math(11+11), math(22+22)  =>  22, 44
+math(11+11)math(22+22)  =>  2244
+math(65515/8/1024)  =>  7.9974365234375
+math(Sqrt(e+1+Sqrt(25)+Abs(-10)))  =>  4.326462969731631
+math(sqrt(e+1+sqrt(25)+abs(-10)))  =>  4.326462969731631
+math(floor(sqrt(e+1+sqrt(25)+abs(-10))))  =>  4
+linear-gradient(90deg, black math(100/3)%, red math(100/3)%, blue math(100/3)%)  =>  linear-gradient(90deg, black 33.333333333333336%, red 33.333333333333336%, blue 33.333333333333336%)
+math()  =>
+```
 
