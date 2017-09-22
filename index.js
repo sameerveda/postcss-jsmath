@@ -2,7 +2,7 @@ const postcss = require('postcss'),
     messageHelpers = require("postcss-message-helpers"),
     math = require("./process-math.js");
 
-module.exports = postcss.plugin('postcss-math', function (opts) {
+module.exports = postcss.plugin('postcss-jsmath', function (opts) {
     return function (root, result) {
         math.set(opts);
 

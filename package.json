@@ -1,5 +1,5 @@
 {
-  "name": "postcss-math",
+  "name": "postcss-jsmath",
   "version": "0.0.1",
   "description": "PostCSS plugin to do some math",
   "keywords": [
@@ -11,11 +11,11 @@
   ],
   "author": "Naaspati <sameerveda@gmail.com>",
   "license": "MIT",
-  "repository": "naaspati/postcss-math",
+  "repository": "naaspati/postcss-jsmath",
   "bugs": {
-    "url": "https://github.com/naaspati/postcss-math/issues"
+    "url": "https://github.com/naaspati/postcss-jsmath/issues"
   },
-  "homepage": "https://github.com/naaspati/postcss-math",
+  "homepage": "https://github.com/naaspati/postcss-jsmath",
   "dependencies": {
     "postcss": "^6.0.1",
     "postcss-message-helpers": "^2.0.0"
