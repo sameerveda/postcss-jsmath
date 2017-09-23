@@ -7,7 +7,9 @@
     "css",
     "postcss-plugin",
     "math",
-    "calc"
+    "calc",
+	"mathematics",
+	"math-function"
   ],
   "author": "Naaspati <sameerveda@gmail.com>",
   "license": "MIT",
