@@ -24,12 +24,26 @@ test("math(sum(1, 2, 3, 5, 6))");
 test("math(firstnumber(111, 2, 4, 5))");
 test("math(r)");
 test("math(floor(random()*100))");
+test("math(floor(random()*100))");
 
 function test(string) {
     let s = math.process(string);
     try {
-        console.log(string, " => ", s);
+        console.log(string, " => ", yellow(s));
     } catch (error) {
-        console.log(string, "  => ", "failed");
+        console.log(string, "  => ", red("failed"));
     }
-}
+
+	}
+	
+	function green(obj){
+		return "\u001b[32m"+obj+"\u001b[0m";
+	}
+	
+	function yellow(obj){
+		return "\u001b[33m"+obj+"\u001b[0m";
+	}
+	
+function  red(obj){
+	return  "\u001b[31m"+ obj +  "\u001b[0m";
+	}

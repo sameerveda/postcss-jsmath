@@ -5,15 +5,22 @@ const cache = new Map(),
 
 Object.getOwnPropertyNames(Math).forEach(s => { mathKeys[s.toLowerCase()] = Math[s]; });
 
+function cachePut(key, value) {
+	if(key && key.toLowerCase().includes("random"))
+		return ;
+	cache.set(key, value);
+}
+
 function process(exp) {
-    if (cache.has(exp) && !exp.toLowerCase().includes("random"))
+    if (cache.has(exp))
         return cache.get(exp);
 
     const result = split(exp)
         .map(s => /^math\(/.test(s) ? math(s.substring(5, s.length - 1)) : s)
         .join("");
 
-    cache.set(exp, result);
+		
+    cachePut(exp, result);
     return result;
 }
 
@@ -32,8 +39,9 @@ function split(exp) {
 }
 
 function math(string) {
-    if (cache.has(string)  && !string.toLowerCase().includes("random"))
+    if (cache.has(string))
         return cache.get(string);
+	
     const cacheKey = string;
 
     if (string.includes('math('))
@@ -62,7 +70,7 @@ function math(string) {
         string = eval(string);
 
     string = string === undefined || string === null ? "NaN" : string.toString();
-    cache.set(cacheKey, string);
+    cachePut(cacheKey, string);
     return string;
 }
 
