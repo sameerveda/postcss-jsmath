@@ -1,6 +1,6 @@
 {
   "name": "postcss-jsmath",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "PostCSS plugin to do some math",
   "keywords": [
     "postcss",
@@ -8,8 +8,8 @@
     "postcss-plugin",
     "math",
     "calc",
-	"mathematics",
-	"math-function"
+    "mathematics",
+    "math-function"
   ],
   "author": "Naaspati <sameerveda@gmail.com>",
   "license": "MIT",
