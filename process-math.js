@@ -6,7 +6,7 @@ const cache = new Map(),
 Object.getOwnPropertyNames(Math).forEach(s => { mathKeys[s.toLowerCase()] = Math[s]; });
 
 function process(exp) {
-    if (cache.has(exp))
+    if (cache.has(exp) && !exp.toLowerCase().includes("random"))
         return cache.get(exp);
 
     const result = split(exp)
@@ -32,7 +32,7 @@ function split(exp) {
 }
 
 function math(string) {
-    if (cache.has(string))
+    if (cache.has(string)  && !string.toLowerCase().includes("random"))
         return cache.get(string);
     const cacheKey = string;
 
