@@ -121,7 +121,7 @@ const numberTest = /^[+-]?(?:\d+|\d*\.\d+|\d+\.\d*|\d+e\d+)$/;
 
 function findConstant(s) {
     s = s.trim();
-    if (numberTest.test(s))
+    if (numberTest.test(s) || evalable(s))
         return s;
 
     let c = defaults[s];

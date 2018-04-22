@@ -9,6 +9,7 @@ test("math(sqrt(e+1+sqrt(25)+abs(-10)))");
 test("math(floor(sqrt(e+1+sqrt(25)+abs(-10))))");
 test("linear-gradient(90deg, black math(100/3)%, red math(100/3)%, blue math(100/3)%)");
 test("math()");
+test("math((2-1)*-100)px")
 
 math.set({
     r: 8.3144598,
