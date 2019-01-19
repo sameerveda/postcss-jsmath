@@ -1,4 +1,5 @@
 NOT MAINTAINED
+NOTIFIED ISSUES WILL BE FIXED :)
 
 ![icon][logo]
 # PostCSS JSMath 
