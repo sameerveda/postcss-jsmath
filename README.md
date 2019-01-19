@@ -1,3 +1,5 @@
+NOT MAINTAINED
+
 ![icon][logo]
 # PostCSS JSMath 
 
